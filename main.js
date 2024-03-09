@@ -32,6 +32,28 @@ function getData (name)  {
         wind.innerHTML = `Rüzgar: ${speed}km/s`;
         weatherDesc.innerHTML = `<i>${description.toUpperCase()}</i>`
         feeling.textContent = `Hissedilen : ${feels_like}`
+     
+         // Hava durumuna göre arkaplan değiştirme
+      if (description.includes("yağmur")) {
+        document.body.style.backgroundImage = "url('images/rain.webp')";
+      } else if (description.includes("bulutlu")) {
+        document.body.style.backgroundImage = "url('images/bulutlu2.jpg')";
+      } 
+      else if (description.includes("kapalı")) {
+        document.body.style.backgroundImage = "url('images/kapalı.jpeg')";
+      } 
+      else if (description.includes("kar")) {
+        document.body.style.backgroundImage = "url('images/snow2.jpg')";
+      } 
+      else if (description.includes("açık")) {
+        document.body.style.backgroundImage = "url('images/sun.jpg')";
+      } 
+      else if (description.includes("sis")) {
+        document.body.style.backgroundImage = "url('images/sisli.jpeg')";
+      }
+      else {
+        document.body.style.backgroundImage = "url('images/sky.jpg')";
+      }
 })
     .catch((error) => console.log(error));
     
