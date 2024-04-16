@@ -1,5 +1,7 @@
 ﻿<h1> Weather-App </h1>
 
+Canlı: https://weather-mcht.netlify.app/
+
 <h2>Özellikler</h2>
 
 - HTML5, CSS ve JavaScript kullanılarak geliştirilmiş bir hava durumu sitesidir.
